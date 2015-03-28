@@ -18,6 +18,8 @@
 
 <body>
 
+<h1>Random Numbers</h1>
+
 <?php
 
 //Part of a project I did for my class
