@@ -1,3 +1,13 @@
 .header-spacer {
 	margin-top: 50px;
 }
+
+.photo-thumbnail {
+	background-color: black;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+body {
+	background-color: black;
+}
