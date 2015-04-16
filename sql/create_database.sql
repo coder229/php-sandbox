@@ -21,9 +21,6 @@ create table photoman_image (
 create index photoman_image_filename on 
 	photoman_image(filename);
 
-create index photoman_image_filename on 
-	photoman_image(filename);
-
 create table photoman_album_image (
 	album_id int not null,
 	image_id int not null,
