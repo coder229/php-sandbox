@@ -26,6 +26,3 @@ create table photoman_album_image (
 	image_id int not null,
 	primary key (album_id, image_id)
 );
-
-
-
