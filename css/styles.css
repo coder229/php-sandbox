@@ -1,0 +1,28 @@
+
+body
+{
+	background-color: #b8bca2;
+	margin:auto;
+}
+
+#Container
+
+{
+	background-color: white;
+	width:900px;
+	margin:auto;
+	margin-top:25px;
+	padding-bottom:30px;
+	padding-left:50px;
+	padding-right:50px;
+	border:#2b2d17 double thick;
+	box-shadow:-10px 10px 20px #8e8e8e;
+	-webkit-box-shadow:-10px 10px 20px #8e8e8e;
+	-moz-box-shadow: -10px 10px 20px #8e8e8e;
+	color:#21360d;
+
+}
+
+#para1 {
+	margin-left:15px;
+}
