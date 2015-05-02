@@ -1,6 +1,8 @@
 
+
 body
 {
+	/*background-color: black;*/
 	background-color: #b8bca2;
 	margin:auto;
 }
@@ -25,4 +27,14 @@ body
 
 #para1 {
 	margin-left:15px;
+}
+
+.header-spacer {
+	margin-top: 50px;
+}
+
+.photo-thumbnail {
+	background-color: black;
+	padding-top: 20px;
+	padding-right: 20px;
 }
