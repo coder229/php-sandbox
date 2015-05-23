@@ -1,4 +1,12 @@
 <?php
+if ($_COOKIE['accessToken'] == '') {
+    $parts = parse_url($_SERVER['REQUEST_URI']);
+    $context = substr($parts["path"], 0, strrpos($parts["path"], "/"));
+    header("Location: " . $context . "/login.html");
+    setcookie('accessToken', 'foo', time()+60*60*24);
+    exit();
+}
+
 $config = array(
     "db" => array(
         "dbname" => "phpsandbox",
