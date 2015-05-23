@@ -1,17 +1,10 @@
 <?php
-if ($_COOKIE['accessToken'] == '') {
-    $parts = parse_url($_SERVER['REQUEST_URI']);
-    $context = substr($parts["path"], 0, strrpos($parts["path"], "/"));
-    header("Location: " . $context . "/login.html");
-    setcookie('accessToken', 'foo', time()+60*60*24);
-    exit();
-}
-
+$appname = "PhotoMan";
 $config = array(
     "db" => array(
         "dbname" => "phpsandbox",
         "username" => "phpsandbox",
-        "password" => "password",
+        "password" => "phpsandbox",
         "host" => "localhost"
     ),
     "paths" => array(
@@ -31,6 +24,15 @@ $mysqli = new mysqli(
 	
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+}
+
+try {
+    $DBH = new PDO("mysql:host=". $config["db"]["host"] . ";dbname=". $config["db"]["dbname"], 
+        $config["db"]["username"], $config["db"]["password"]);
+}
+catch(PDOException $e) {
+    echo $e->getMessage();
+    exit();
 }
 
 defined("LIBRARY_PATH")

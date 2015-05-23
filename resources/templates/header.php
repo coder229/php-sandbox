@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>HTML Template</title>
+    <title><?php echo $appname?></title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -15,7 +15,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   
     <!-- Custom styles for this template -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/photoman.css" rel="stylesheet">
   </head>
 
   <body>

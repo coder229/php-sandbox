@@ -6,8 +6,7 @@ html, body {
 }
 
 body {
-	background: white;
-	background-repeat: repeat-x;
+	background-color: black;
 	background-size: cover;
 
 	font-family: 'Lucida Grande', 'Tahoma', 'Verdana', sans-serif;

@@ -1,9 +1,10 @@
 <?php
+    require_once("resources/secure.php");
     require_once("resources/config.php");
     require_once(TEMPLATES_PATH . "/header.php");
     require_once(TEMPLATES_PATH . "/navBar.php");
 ?>
-<div class="container">
+<div class="container photos">
 	<div class="row">
 		<?php
 			$result = $mysqli->query("select * from photoman_image");

@@ -1,4 +1,9 @@
-
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
 
 body
 {
@@ -23,6 +28,11 @@ body
 	-moz-box-shadow: -10px 10px 20px #8e8e8e;
 	color:#21360d;
 
+}
+
+.photos {
+	height: 100%
+	margin-top: 50px;
 }
 
 #para1 {
