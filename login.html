@@ -4,15 +4,21 @@
 	<meta charset="UTF-8" />
 	<title>Sign in</title>
 	<link href="css/login.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+	
 </head>
 <body>
 <div class="container">
 	<form method="post" action="login.php">
 		<h2>Sign in</h2>
-		<input type="text" placeholder="username" autofocus> 
-		<input type="password" placeholder="password">
+		<input type="text" name="username" placeholder="username" autofocus required="required"> 
+		<input type="password" name="password" placeholder="password" required="required">
 		<button type="submit">Login</button>
 	</form>
 </div>
 </body>
+
 </html>
